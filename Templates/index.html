@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<center>
+    <font face = "Verdana" size = "5">
+    <div style="color:white"><div style="background-color:#BFF068 ">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Basic Classifier</h2>
+            <h3>What is min?</h3><br><input id="first" name="min1" required="required">
+            <h3>What is log variance</h3><input id="second" name="log10_Var100_10" required="required">
+            <h3>What is Dis_max?</h3><br><input id="third" name="Dis_max" required="required">
+            <h3>What is Slope?</h3><br><input id="fourth" name="Slope" required="required">
+            <h3>What is Charge time</h3><br><input id="five" name="charge_tym" required="required">
+            <h3>What is Intercept?</h3><br><input id="six" name="Intercept" required="required">
+            <h3>What is integration ?</h3><br><input id="seven" name="Intergration" required="required">
+            <h3>What is iR_min?</h3><br><input id="eight" name="IR_min" required="required">
+            <h3>What is iR_diff?</h3><br><input id="nine" name="IR_diff" required="required">
+
+            <br><br><button id="sub" type="submit ">Calculate the Cycle</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+</body>
+
+</html>
