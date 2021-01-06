@@ -15,7 +15,7 @@ def Home():
 
 
 standard_to = StandardScaler()
-@app.route("/predict", methods=['POST'])
+@app.route("/", methods=['POST'])
 def predict():
     if request.method == 'POST':
         charge_tym	=float(request.form['charge_tym'])
